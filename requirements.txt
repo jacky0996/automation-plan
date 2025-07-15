@@ -1,0 +1,7 @@
+PyPtt
+python-dotenv
+pymysql==1.1.1
+mysql-connector-python==9.3.0
+greenlet==3.2.3 
+playwright==1.52.0 
+pyee==13.0.0
