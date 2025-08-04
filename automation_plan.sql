@@ -35,16 +35,6 @@ CREATE TABLE `accounts` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `accounts`
---
-
-LOCK TABLES `accounts` WRITE;
-/*!40000 ALTER TABLE `accounts` DISABLE KEYS */;
-INSERT INTO `accounts` VALUES (3,'py134679','ai134679','2025-04-22 22:01:50','PTT',0),(4,'jacky5630','z8063478','2025-05-01 21:36:39','PTT',0),(5,'0928539044','Bkend134679','2025-05-08 21:36:22','CMONEY',1),(6,'lunarshade3','Pf9#zY12x!@','2025-06-04 16:50:27','PTT',1),(7,'catwalkzero','Aq#9kmv73Dew\nAq#9kmv73Dew\nAq#9kmv73Dew','2025-06-04 16:50:27','PTT',0),(8,'iamsolucky','luck2023','2025-06-04 16:50:27','PTT',1);
-/*!40000 ALTER TABLE `accounts` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `activity_log`
 --
 
@@ -62,17 +52,39 @@ CREATE TABLE `activity_log` (
   PRIMARY KEY (`id`),
   KEY `account_id` (`account_id`),
   CONSTRAINT `activity_log_ibfk_1` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `activity_log`
+-- Table structure for table `cmoney_get_board_by_popular`
 --
 
-LOCK TABLES `activity_log` WRITE;
-/*!40000 ALTER TABLE `activity_log` DISABLE KEYS */;
-/*!40000 ALTER TABLE `activity_log` ENABLE KEYS */;
-UNLOCK TABLES;
+DROP TABLE IF EXISTS `cmoney_get_board_by_popular`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cmoney_get_board_by_popular` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `code` varchar(45) NOT NULL COMMENT '股票代碼',
+  `name` varchar(45) NOT NULL COMMENT '股票名稱',
+  `last_use_time` date NOT NULL COMMENT '最後使用時間',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=91 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `cmoney_push_post`
+--
+
+DROP TABLE IF EXISTS `cmoney_push_post`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cmoney_push_post` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `code` int NOT NULL COMMENT '股票代號',
+  `content_id` int DEFAULT NULL COMMENT '模板id',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Table structure for table `login_logs`
@@ -93,18 +105,8 @@ CREATE TABLE `login_logs` (
   PRIMARY KEY (`id`),
   KEY `account_id` (`account_id`),
   CONSTRAINT `login_logs_ibfk_1` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1072 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1171 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `login_logs`
---
-
-LOCK TABLES `login_logs` WRITE;
-/*!40000 ALTER TABLE `login_logs` DISABLE KEYS */;
-INSERT INTO `login_logs` VALUES (1016,8,'2025-06-04 16:52:20','成功','下次登入時間: 2025-06-05 18:51:34',1,'PTT','2025-06-04 16:52:30'),(1017,3,'2025-06-04 16:52:20','成功','下次登入時間: 2025-06-05 08:04:58',1,'PTT','2025-06-04 16:52:30'),(1018,4,'2025-06-04 16:52:20','成功','下次登入時間: 2025-06-05 11:38:17',1,'PTT','2025-06-04 16:52:30'),(1019,7,'2025-06-04 16:52:20','成功','下次登入時間: 2025-06-05 22:42:38',1,'PTT','2025-06-04 16:52:30'),(1020,6,'2025-06-04 16:52:20','成功','下次登入時間: 2025-06-05 13:28:26',1,'PTT','2025-06-04 16:52:31'),(1023,5,'2025-06-04 17:25:39','成功','下次登入時間: 2025-06-05 20:23:46',1,'cmoney',NULL),(1024,3,'2025-06-07 15:52:36','成功','下次登入時間: 2025-06-08 12:03:26',1,'PTT','2025-06-07 15:52:47'),(1025,8,'2025-06-07 15:52:36','成功','下次登入時間: 2025-06-08 15:56:38',1,'PTT','2025-06-07 15:52:47'),(1026,4,'2025-06-07 15:52:36','成功','下次登入時間: 2025-06-08 04:02:38',1,'PTT','2025-06-07 15:52:47'),(1027,7,'2025-06-07 15:52:36','成功','下次登入時間: 2025-06-08 19:48:08',1,'PTT','2025-06-07 15:52:47'),(1028,6,'2025-06-07 15:52:37','成功','下次登入時間: 2025-06-08 02:44:12',1,'PTT','2025-06-07 15:52:47'),(1031,5,'2025-06-07 16:08:16','成功','下次登入時間: 2025-06-08 02:50:10',1,'cmoney',NULL),(1032,6,'2025-06-08 08:16:32','成功','下次登入時間: 2025-06-09 09:02:29',1,'PTT','2025-06-08 08:16:42'),(1033,4,'2025-06-08 08:16:32','成功','下次登入時間: 2025-06-09 20:13:26',1,'PTT','2025-06-08 08:16:42'),(1040,5,'2025-06-08 08:52:29','成功','下次登入時間: 2025-06-09 07:53:09',1,'cmoney',NULL),(1041,3,'2025-06-08 22:51:40','成功','下次登入時間: 2025-06-09 12:49:31',1,'PTT','2025-06-08 22:51:51'),(1042,8,'2025-06-08 22:51:40','成功','下次登入時間: 2025-06-09 16:18:09',1,'PTT','2025-06-08 22:51:50'),(1043,7,'2025-06-08 22:51:40','成功','下次登入時間: 2025-06-09 19:10:27',1,'PTT','2025-06-08 22:51:51'),(1044,5,'2025-06-11 05:37:48','失敗','登入失敗，無法確定原因',1,'cmoney',NULL),(1045,6,'2025-06-11 14:29:41','成功','下次登入時間: 2025-06-12 20:44:55',1,'PTT','2025-06-11 14:29:51'),(1046,3,'2025-06-12 18:36:54','成功','下次登入時間: 2025-06-13 10:03:44',1,'PTT','2025-06-12 18:37:04'),(1047,8,'2025-06-13 09:37:33','成功','下次登入時間: 2025-06-14 11:56:37',1,'PTT','2025-06-13 09:37:43'),(1048,7,'2025-06-13 19:52:50','失敗','登入失敗：連線失敗',1,'PTT',NULL),(1049,7,'2025-06-13 19:53:56','失敗','登入失敗：連線失敗',2,'PTT',NULL),(1050,7,'2025-06-13 19:55:03','失敗','登入失敗：連線失敗 | 登入失敗超過3次，帳號已停用',3,'PTT',NULL),(1051,4,'2025-06-13 20:55:49','失敗','登入失敗：連線失敗',1,'PTT',NULL),(1052,4,'2025-06-13 20:56:55','失敗','登入失敗：連線失敗',2,'PTT',NULL),(1053,4,'2025-06-13 20:58:02','失敗','登入失敗：連線失敗 | 登入失敗超過3次，帳號已停用',3,'PTT',NULL),(1054,3,'2025-06-14 15:57:21','失敗','登入失敗：連線失敗',1,'PTT',NULL),(1055,3,'2025-06-14 15:58:28','失敗','登入失敗：連線失敗',2,'PTT',NULL),(1056,3,'2025-06-14 15:59:34','失敗','登入失敗：連線失敗 | 登入失敗超過3次，帳號已停用',3,'PTT',NULL),(1057,8,'2025-06-16 21:16:53','成功','下次登入時間: 2025-06-17 22:20:28',1,'PTT','2025-06-16 21:17:03'),(1058,6,'2025-06-16 21:16:53','成功','下次登入時間: 2025-06-17 06:01:15',1,'PTT','2025-06-16 21:17:04'),(1067,NULL,NULL,NULL,'下次登入時間: 2025-06-17 00:36:55',NULL,NULL,NULL),(1071,5,'2025-06-16 22:29:38','成功','下次登入時間: 2025-06-17 03:24:00',1,'cmoney','2025-06-16 22:29:55');
-/*!40000 ALTER TABLE `login_logs` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `posts`
@@ -130,18 +132,41 @@ CREATE TABLE `posts` (
   PRIMARY KEY (`id`),
   KEY `account_id` (`account_id`),
   CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `posts`
+-- Table structure for table `ptt_get_post_by_board`
 --
 
-LOCK TABLES `posts` WRITE;
-/*!40000 ALTER TABLE `posts` DISABLE KEYS */;
-INSERT INTO `posts` VALUES (11,5,'6111','大宇資','測試發文',NULL,NULL,'2025-06-16 22:26:30',NULL,'cmoney','test','success',NULL);
-/*!40000 ALTER TABLE `posts` ENABLE KEYS */;
-UNLOCK TABLES;
+DROP TABLE IF EXISTS `ptt_get_post_by_board`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ptt_get_post_by_board` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `borad` varchar(45) NOT NULL COMMENT '搜尋看板',
+  `limit_replay_count` int NOT NULL DEFAULT '0' COMMENT '推文數需大於此數,才會將找到的文章紀錄',
+  `keywords` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `borad_UNIQUE` (`borad`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ptt_push_post`
+--
+
+DROP TABLE IF EXISTS `ptt_push_post`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ptt_push_post` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `board` varchar(225) NOT NULL COMMENT '發文版',
+  `aid` varchar(50) NOT NULL COMMENT '文章id',
+  `content_id` int NOT NULL COMMENT '推文模板id',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Table structure for table `push_tasks`
@@ -167,17 +192,49 @@ CREATE TABLE `push_tasks` (
   KEY `post_id` (`post_id`) COMMENT '加速查詢特定文章的推文任務',
   CONSTRAINT `push_tasks_ibfk_1` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`),
   CONSTRAINT `push_tasks_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='推文任務管理表';
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='推文任務管理表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `push_tasks`
+-- Table structure for table `replay_template`
 --
 
-LOCK TABLES `push_tasks` WRITE;
-/*!40000 ALTER TABLE `push_tasks` DISABLE KEYS */;
-/*!40000 ALTER TABLE `push_tasks` ENABLE KEYS */;
-UNLOCK TABLES;
+DROP TABLE IF EXISTS `replay_template`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `replay_template` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `content` varchar(225) NOT NULL COMMENT '內容',
+  `site` varchar(45) NOT NULL COMMENT '網站',
+  `board` varchar(45) NOT NULL COMMENT '要使用推文的版',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `scheduled_tasks`
+--
+
+DROP TABLE IF EXISTS `scheduled_tasks`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `scheduled_tasks` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `account_id` int NOT NULL,
+  `task_type` enum('login','post','push') NOT NULL DEFAULT 'login',
+  `status` enum('pending','running','completed','failed') DEFAULT 'pending',
+  `priority` int DEFAULT '5',
+  `next_execution_time` datetime NOT NULL,
+  `last_execution_time` datetime DEFAULT NULL,
+  `result` enum('success','fail') DEFAULT NULL,
+  `result_message` text,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `account_id` (`account_id`),
+  CONSTRAINT `scheduled_tasks_ibfk_1` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -188,4 +245,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-17 22:50:54
+-- Dump completed on 2025-08-04 21:20:35

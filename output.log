@@ -1217,3 +1217,513 @@ PTT 登入失敗：連線失敗
 2025-07-13 17:28:03,183 - INFO - 取得看板資訊 test ... 成功
 2025-07-13 17:28:03,184 - INFO - 推文
 2025-07-13 17:28:03,269 - INFO - 推文...成功
+2025-07-16 23:55:29,947 - INFO - ==================================================
+2025-07-16 23:55:29,947 - INFO - 啟動自動登入檢查...
+2025-07-16 23:55:29,947 - INFO - 添加隨機延遲 3 秒
+2025-07-16 23:55:32,994 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-16 23:55:32.994432
+2025-07-16 23:55:32,995 - INFO - 找到 3 個需要登入的帳號
+2025-07-16 23:55:32,995 - INFO - 準備登入: PTT - py134679
+2025-07-16 23:55:32,995 - INFO - 準備登入: PTT - jacky5630
+2025-07-16 23:55:32,995 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-16 23:55:34,241 - INFO - 開始處理 PTT 帳號: py134679
+2025-07-16 23:55:34,272 - INFO - PyPtt v 1.2.18 由 CodingMan 開發
+2025-07-16 23:55:34,272 - INFO - PyPtt 初始化
+2025-07-16 23:55:34,272 - INFO - 設定連線模式 ... WebSocket
+2025-07-16 23:55:34,272 - INFO - 設定語言模組 ... 繁體中文
+2025-07-16 23:55:34,272 - INFO - 設定連線主機 ... 批踢踢
+2025-07-16 23:55:34,272 - INFO - PyPtt 初始化 ... 完成
+2025-07-16 23:55:34,272 - INFO - 目前版本 1.2.18
+2025-07-16 23:55:34,413 - INFO - 登入帳號 py134679
+2025-07-16 23:55:34,627 - INFO - 登入 ... 成功
+2025-07-16 23:55:37,639 - INFO - 登出
+2025-07-16 23:55:37,973 - INFO - 登出 ... 成功
+2025-07-16 23:55:37,977 - INFO - 等待 13 秒處理下一個帳號...
+2025-07-16 23:55:50,982 - INFO - 開始處理 PTT 帳號: jacky5630
+2025-07-16 23:55:51,029 - INFO - PyPtt v 1.2.18 由 CodingMan 開發
+2025-07-16 23:55:51,029 - INFO - PyPtt 初始化
+2025-07-16 23:55:51,029 - INFO - 設定連線模式 ... WebSocket
+2025-07-16 23:55:51,029 - INFO - 設定語言模組 ... 繁體中文
+2025-07-16 23:55:51,029 - INFO - 設定連線主機 ... 批踢踢
+2025-07-16 23:55:51,029 - INFO - PyPtt 初始化 ... 完成
+2025-07-16 23:55:51,029 - INFO - 目前版本 1.2.18
+2025-07-16 23:55:51,131 - INFO - 登入帳號 jacky5630
+2025-07-16 23:55:51,583 - INFO - 登入 ... 成功
+2025-07-16 23:55:57,596 - INFO - 登出
+2025-07-16 23:55:57,648 - INFO - 登出 ... 成功
+2025-07-16 23:55:57,650 - INFO - 等待 8 秒處理下一個帳號...
+2025-07-16 23:56:05,717 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-16 23:56:39,989 - INFO - 本次登入檢查完成，程式結束
+2025-07-17 21:46:29,116 - INFO - ==================================================
+2025-07-17 21:46:29,116 - INFO - 啟動自動登入檢查...
+2025-07-17 21:46:29,116 - INFO - 添加隨機延遲 4 秒
+2025-07-17 21:46:33,166 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 21:46:33.166133
+2025-07-17 21:46:33,167 - INFO - 找到 3 個需要登入的帳號
+2025-07-17 21:46:33,167 - INFO - 準備登入: PTT - py134679
+2025-07-17 21:46:33,167 - INFO - 準備登入: PTT - jacky5630
+2025-07-17 21:46:33,167 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 21:46:33,321 - INFO - 開始處理 PTT 帳號: py134679
+2025-07-17 21:46:33,353 - INFO - PyPtt v 1.2.18 由 CodingMan 開發
+2025-07-17 21:46:33,353 - INFO - PyPtt 初始化
+2025-07-17 21:46:33,353 - INFO - 設定連線模式 ... WebSocket
+2025-07-17 21:46:33,353 - INFO - 設定語言模組 ... 繁體中文
+2025-07-17 21:46:33,353 - INFO - 設定連線主機 ... 批踢踢
+2025-07-17 21:46:33,353 - INFO - PyPtt 初始化 ... 完成
+2025-07-17 21:46:33,353 - INFO - 目前版本 1.2.18
+2025-07-17 21:46:33,565 - INFO - 連線 批踢踢 ... 失敗
+2025-07-17 21:46:33,566 - INFO - 準備再次連線 批踢踢 3
+2025-07-17 21:46:34,571 - INFO - 準備再次連線 批踢踢 2
+2025-07-17 21:46:35,576 - INFO - 準備再次連線 批踢踢 1
+2025-07-17 21:46:36,770 - INFO - 連線 批踢踢 ... 失敗
+2025-07-17 21:46:36,771 - INFO - 準備再次連線 批踢踢 3
+2025-07-17 21:46:52,905 - INFO - ==================================================
+2025-07-17 21:46:52,905 - INFO - 啟動自動登入檢查...
+2025-07-17 21:46:52,905 - INFO - 添加隨機延遲 3 秒
+2025-07-17 21:46:55,950 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 21:46:55.950954
+2025-07-17 21:46:55,951 - INFO - 找到 3 個需要登入的帳號
+2025-07-17 21:46:55,952 - INFO - 準備登入: PTT - py134679
+2025-07-17 21:46:55,952 - INFO - 準備登入: PTT - jacky5630
+2025-07-17 21:46:55,952 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 21:46:56,096 - INFO - 開始處理 PTT 帳號: py134679
+2025-07-17 21:46:56,132 - INFO - PyPtt v 1.2.18 由 CodingMan 開發
+2025-07-17 21:46:56,132 - INFO - PyPtt 初始化
+2025-07-17 21:46:56,132 - INFO - 設定連線模式 ... WebSocket
+2025-07-17 21:46:56,132 - INFO - 設定語言模組 ... 繁體中文
+2025-07-17 21:46:56,132 - INFO - 設定連線主機 ... 批踢踢
+2025-07-17 21:46:56,132 - INFO - PyPtt 初始化 ... 完成
+2025-07-17 21:46:56,132 - INFO - 目前版本 1.2.18
+2025-07-17 21:46:56,276 - INFO - 登入帳號 py134679
+2025-07-17 21:46:56,766 - INFO - 登入 ... 成功
+2025-07-17 21:47:01,780 - INFO - 登出
+2025-07-17 21:47:02,176 - INFO - 登出 ... 成功
+2025-07-17 21:47:02,180 - INFO - 等待 14 秒處理下一個帳號...
+2025-07-17 21:47:16,180 - INFO - 開始處理 PTT 帳號: jacky5630
+2025-07-17 21:47:16,228 - INFO - PyPtt v 1.2.18 由 CodingMan 開發
+2025-07-17 21:47:16,228 - INFO - PyPtt 初始化
+2025-07-17 21:47:16,229 - INFO - 設定連線模式 ... WebSocket
+2025-07-17 21:47:16,229 - INFO - 設定語言模組 ... 繁體中文
+2025-07-17 21:47:16,229 - INFO - 設定連線主機 ... 批踢踢
+2025-07-17 21:47:16,229 - INFO - PyPtt 初始化 ... 完成
+2025-07-17 21:47:16,229 - INFO - 目前版本 1.2.18
+2025-07-17 21:47:16,325 - INFO - 登入帳號 jacky5630
+2025-07-17 21:47:16,591 - INFO - 登入 ... 成功
+2025-07-17 21:47:20,601 - INFO - 登出
+2025-07-17 21:47:20,924 - INFO - 登出 ... 成功
+2025-07-17 21:47:20,927 - INFO - 等待 14 秒處理下一個帳號...
+2025-07-17 21:47:34,995 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:00:24,091 - INFO - ==================================================
+2025-07-17 22:00:24,091 - INFO - 啟動自動登入檢查...
+2025-07-17 22:00:24,091 - INFO - 添加隨機延遲 1 秒
+2025-07-17 22:00:25,117 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:00:25.117939
+2025-07-17 22:00:25,119 - INFO - 找到 3 個需要登入的帳號
+2025-07-17 22:00:25,119 - INFO - 準備登入: PTT - py134679
+2025-07-17 22:00:25,119 - INFO - 準備登入: PTT - jacky5630
+2025-07-17 22:00:25,119 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:00:25,253 - INFO - 開始處理 PTT 帳號: py134679
+2025-07-17 22:00:25,293 - INFO - PyPtt v 1.2.18 由 CodingMan 開發
+2025-07-17 22:00:25,293 - INFO - PyPtt 初始化
+2025-07-17 22:00:25,293 - INFO - 設定連線模式 ... WebSocket
+2025-07-17 22:00:25,293 - INFO - 設定語言模組 ... 繁體中文
+2025-07-17 22:00:25,293 - INFO - 設定連線主機 ... 批踢踢
+2025-07-17 22:00:25,293 - INFO - PyPtt 初始化 ... 完成
+2025-07-17 22:00:25,293 - INFO - 目前版本 1.2.18
+2025-07-17 22:00:25,296 - INFO - 等待 6 秒處理下一個帳號...
+2025-07-17 22:00:43,467 - INFO - ==================================================
+2025-07-17 22:00:43,467 - INFO - 啟動自動登入檢查...
+2025-07-17 22:00:43,467 - INFO - 添加隨機延遲 3 秒
+2025-07-17 22:00:46,518 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:00:46.518824
+2025-07-17 22:00:46,519 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 22:00:46,519 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:00:46,575 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:08:34,698 - INFO - ==================================================
+2025-07-17 22:08:34,698 - INFO - 啟動自動登入檢查...
+2025-07-17 22:08:34,698 - INFO - 添加隨機延遲 1 秒
+2025-07-17 22:08:35,758 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:08:35.758135
+2025-07-17 22:08:35,761 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 22:08:35,761 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:08:35,817 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:18:42,909 - INFO - ==================================================
+2025-07-17 22:18:42,910 - INFO - 啟動自動登入檢查...
+2025-07-17 22:18:42,910 - INFO - 添加隨機延遲 5 秒
+2025-07-17 22:18:47,959 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:18:47.959350
+2025-07-17 22:18:47,960 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 22:18:47,961 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:18:48,018 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:26:50,402 - INFO - ==================================================
+2025-07-17 22:26:50,402 - INFO - 啟動自動登入檢查...
+2025-07-17 22:26:50,403 - INFO - 添加隨機延遲 1 秒
+2025-07-17 22:26:51,452 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:26:51.452852
+2025-07-17 22:26:51,454 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 22:26:51,454 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:26:51,506 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:28:13,841 - ERROR - Exception in callback ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198
+handle: <Handle ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 202, in cb
+    self.future.cancel()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-17 22:30:33,529 - INFO - ==================================================
+2025-07-17 22:30:33,529 - INFO - 啟動自動登入檢查...
+2025-07-17 22:30:33,529 - INFO - 添加隨機延遲 4 秒
+2025-07-17 22:30:37,566 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:30:37.566589
+2025-07-17 22:30:37,568 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 22:30:37,568 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:30:37,633 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:32:33,651 - ERROR - Exception in callback ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198
+handle: <Handle ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 202, in cb
+    self.future.cancel()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-17 22:35:38,920 - INFO - ==================================================
+2025-07-17 22:35:38,920 - INFO - 啟動自動登入檢查...
+2025-07-17 22:35:38,920 - INFO - 添加隨機延遲 1 秒
+2025-07-17 22:35:39,965 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:35:39.965081
+2025-07-17 22:35:39,966 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 22:35:39,966 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:35:40,020 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:38:54,837 - ERROR - Exception in callback ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198
+handle: <Handle ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 202, in cb
+    self.future.cancel()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-17 22:38:56,307 - INFO - ==================================================
+2025-07-17 22:38:56,307 - INFO - 啟動自動登入檢查...
+2025-07-17 22:38:56,308 - INFO - 添加隨機延遲 5 秒
+2025-07-17 22:39:01,341 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:39:01.341657
+2025-07-17 22:39:01,342 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 22:39:01,343 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:39:01,405 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:40:06,818 - ERROR - Exception in callback ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198
+handle: <Handle ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 202, in cb
+    self.future.cancel()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-17 22:51:30,613 - INFO - ==================================================
+2025-07-17 22:51:30,613 - INFO - 啟動自動登入檢查...
+2025-07-17 22:51:30,614 - INFO - 添加隨機延遲 2 秒
+2025-07-17 22:51:32,664 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:51:32.664851
+2025-07-17 22:51:32,666 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 22:51:32,666 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:51:32,733 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:53:58,963 - ERROR - Exception in callback ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198
+handle: <Handle ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 202, in cb
+    self.future.cancel()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-17 22:56:37,732 - INFO - ==================================================
+2025-07-17 22:56:37,733 - INFO - 啟動自動登入檢查...
+2025-07-17 22:56:37,733 - INFO - 添加隨機延遲 5 秒
+2025-07-17 22:56:42,780 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:56:42.780710
+2025-07-17 22:56:42,781 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 22:56:42,781 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:56:42,837 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:57:58,451 - ERROR - Exception in callback ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198
+handle: <Handle ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 202, in cb
+    self.future.cancel()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-17 22:58:41,434 - INFO - ==================================================
+2025-07-17 22:58:41,434 - INFO - 啟動自動登入檢查...
+2025-07-17 22:58:41,434 - INFO - 添加隨機延遲 3 秒
+2025-07-17 22:58:44,470 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 22:58:44.470924
+2025-07-17 22:58:44,472 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 22:58:44,472 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 22:58:44,533 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 22:59:56,934 - ERROR - Exception in callback ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198
+handle: <Handle ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 202, in cb
+    self.future.cancel()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-17 23:01:34,445 - INFO - ==================================================
+2025-07-17 23:01:34,445 - INFO - 啟動自動登入檢查...
+2025-07-17 23:01:34,446 - INFO - 添加隨機延遲 2 秒
+2025-07-17 23:01:36,495 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 23:01:36.495467
+2025-07-17 23:01:36,496 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 23:01:36,496 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 23:01:36,552 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 23:02:33,238 - ERROR - Exception in callback ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198
+handle: <Handle ProtocolCallback.__init__.<locals>.cb(<Task cancell...Module.py:50>>) at /Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:198>
+Traceback (most recent call last):
+  File "/Users/shane/Desktop/code/ptt-automation-plan/cmoneyPostModule.py", line 31, in execute_pending_posts
+    loop = asyncio.get_running_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/shane/Desktop/code/ptt-automation-plan/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 202, in cb
+    self.future.cancel()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 799, in call_soon
+    self._check_closed()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-07-17 23:03:11,344 - INFO - ==================================================
+2025-07-17 23:03:11,344 - INFO - 啟動自動登入檢查...
+2025-07-17 23:03:11,344 - INFO - 添加隨機延遲 2 秒
+2025-07-17 23:03:13,376 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 23:03:13.376325
+2025-07-17 23:03:13,377 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 23:03:13,377 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 23:03:13,427 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 23:15:54,760 - INFO - ==================================================
+2025-07-17 23:15:54,760 - INFO - 啟動自動登入檢查...
+2025-07-17 23:15:54,760 - INFO - 添加隨機延遲 1 秒
+2025-07-17 23:15:55,806 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 23:15:55.806315
+2025-07-17 23:15:55,808 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 23:15:55,808 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 23:15:55,864 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 23:28:56,118 - INFO - ==================================================
+2025-07-17 23:28:56,118 - INFO - 啟動自動登入檢查...
+2025-07-17 23:28:56,118 - INFO - 添加隨機延遲 1 秒
+2025-07-17 23:28:57,150 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 23:28:57.150277
+2025-07-17 23:28:57,152 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 23:28:57,152 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 23:28:57,207 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 23:32:04,948 - INFO - ==================================================
+2025-07-17 23:32:04,948 - INFO - 啟動自動登入檢查...
+2025-07-17 23:32:04,948 - INFO - 添加隨機延遲 3 秒
+2025-07-17 23:32:07,999 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 23:32:07.999738
+2025-07-17 23:32:08,001 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 23:32:08,001 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 23:32:08,061 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 23:33:09,881 - INFO - 本次登入檢查完成，程式結束
+2025-07-17 23:34:42,016 - INFO - ==================================================
+2025-07-17 23:34:42,016 - INFO - 啟動自動登入檢查...
+2025-07-17 23:34:42,016 - INFO - 添加隨機延遲 3 秒
+2025-07-17 23:34:45,066 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 23:34:45.066666
+2025-07-17 23:34:45,068 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 23:34:45,068 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 23:34:45,126 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 23:35:44,283 - INFO - 本次登入檢查完成，程式結束
+2025-07-17 23:36:18,290 - INFO - ==================================================
+2025-07-17 23:36:18,290 - INFO - 啟動自動登入檢查...
+2025-07-17 23:36:18,290 - INFO - 添加隨機延遲 2 秒
+2025-07-17 23:36:20,322 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 23:36:20.322249
+2025-07-17 23:36:20,324 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 23:36:20,324 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 23:36:20,384 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 23:37:19,884 - INFO - 本次登入檢查完成，程式結束
+2025-07-17 23:37:38,847 - INFO - ==================================================
+2025-07-17 23:37:38,847 - INFO - 啟動自動登入檢查...
+2025-07-17 23:37:38,848 - INFO - 添加隨機延遲 3 秒
+2025-07-17 23:37:41,884 - INFO - 獲取需要登入的帳號，當前時間: 2025-07-17 23:37:41.884592
+2025-07-17 23:37:41,886 - INFO - 找到 1 個需要登入的帳號
+2025-07-17 23:37:41,886 - INFO - 準備登入: CMONEY - 0928539044
+2025-07-17 23:37:41,947 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-07-17 23:39:30,349 - INFO - 本次登入檢查完成，程式結束
+2025-08-01 23:02:07,000 - INFO - ==================================================
+2025-08-01 23:02:07,001 - INFO - 啟動自動登入檢查...
+2025-08-01 23:02:07,001 - INFO - 添加隨機延遲 5 秒
+2025-08-01 23:02:12,049 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-01 23:02:12.048989
+2025-08-01 23:02:12,054 - INFO - 找到 1 個需要登入的帳號
+2025-08-01 23:02:12,054 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-01 23:02:12,115 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-01 23:03:04,948 - INFO - 本次登入檢查完成，程式結束
+2025-08-01 23:05:16,772 - INFO - ==================================================
+2025-08-01 23:05:16,772 - INFO - 啟動自動登入檢查...
+2025-08-01 23:05:16,772 - INFO - 添加隨機延遲 3 秒
+2025-08-01 23:05:19,817 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-01 23:05:19.817725
+2025-08-01 23:05:19,818 - INFO - 找到 1 個需要登入的帳號
+2025-08-01 23:05:19,818 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-01 23:05:19,874 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-01 23:06:04,753 - INFO - 本次登入檢查完成，程式結束
+2025-08-01 23:07:11,457 - INFO - ==================================================
+2025-08-01 23:07:11,457 - INFO - 啟動自動登入檢查...
+2025-08-01 23:07:11,458 - INFO - 添加隨機延遲 4 秒
+2025-08-01 23:07:15,492 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-01 23:07:15.492394
+2025-08-01 23:07:15,493 - INFO - 找到 1 個需要登入的帳號
+2025-08-01 23:07:15,493 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-01 23:07:15,556 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-01 23:07:56,124 - INFO - 本次登入檢查完成，程式結束
+2025-08-01 23:08:24,096 - INFO - ==================================================
+2025-08-01 23:08:24,096 - INFO - 啟動自動登入檢查...
+2025-08-01 23:08:24,097 - INFO - 添加隨機延遲 3 秒
+2025-08-01 23:08:27,129 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-01 23:08:27.129362
+2025-08-01 23:08:27,131 - INFO - 找到 1 個需要登入的帳號
+2025-08-01 23:08:27,131 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-01 23:08:27,193 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-01 23:10:19,700 - INFO - 本次登入檢查完成，程式結束
+2025-08-01 23:13:12,340 - INFO - ==================================================
+2025-08-01 23:13:12,340 - INFO - 啟動自動登入檢查...
+2025-08-01 23:13:12,340 - INFO - 添加隨機延遲 1 秒
+2025-08-01 23:13:13,374 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-01 23:13:13.374486
+2025-08-01 23:13:13,375 - INFO - 找到 1 個需要登入的帳號
+2025-08-01 23:13:13,375 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-01 23:13:13,427 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-01 23:14:38,024 - INFO - 本次登入檢查完成，程式結束
+2025-08-01 23:18:12,220 - INFO - ==================================================
+2025-08-01 23:18:12,221 - INFO - 啟動自動登入檢查...
+2025-08-01 23:18:12,221 - INFO - 添加隨機延遲 5 秒
+2025-08-01 23:18:17,261 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-01 23:18:17.261697
+2025-08-01 23:18:17,262 - INFO - 找到 1 個需要登入的帳號
+2025-08-01 23:18:17,262 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-01 23:18:17,324 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-01 23:19:39,189 - INFO - 本次登入檢查完成，程式結束
+2025-08-01 23:19:45,323 - INFO - ==================================================
+2025-08-01 23:19:45,323 - INFO - 啟動自動登入檢查...
+2025-08-01 23:19:45,323 - INFO - 添加隨機延遲 4 秒
+2025-08-01 23:19:49,356 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-01 23:19:49.356159
+2025-08-01 23:19:49,357 - INFO - 找到 1 個需要登入的帳號
+2025-08-01 23:19:49,357 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-01 23:19:49,423 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-02 00:55:46,926 - INFO - ==================================================
+2025-08-02 00:55:46,926 - INFO - 啟動自動登入檢查...
+2025-08-02 00:55:46,927 - INFO - 添加隨機延遲 3 秒
+2025-08-02 00:55:49,973 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-02 00:55:49.973004
+2025-08-02 00:55:49,974 - INFO - 找到 1 個需要登入的帳號
+2025-08-02 00:55:49,974 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-02 00:55:50,029 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-02 00:57:34,315 - INFO - 本次登入檢查完成，程式結束
+2025-08-02 01:10:40,527 - INFO - ==================================================
+2025-08-02 01:10:40,528 - INFO - 啟動自動登入檢查...
+2025-08-02 01:10:40,528 - INFO - 添加隨機延遲 5 秒
+2025-08-02 01:10:45,574 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-02 01:10:45.574303
+2025-08-02 01:10:45,575 - INFO - 找到 1 個需要登入的帳號
+2025-08-02 01:10:45,575 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-02 01:10:45,634 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-02 01:13:15,667 - INFO - 本次登入檢查完成，程式結束
+2025-08-03 18:05:44,796 - INFO - ==================================================
+2025-08-03 18:05:44,796 - INFO - 啟動自動登入檢查...
+2025-08-03 18:05:44,796 - INFO - 添加隨機延遲 3 秒
+2025-08-03 18:05:47,846 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-03 18:05:47.846041
+2025-08-03 18:05:47,850 - INFO - 找到 1 個需要登入的帳號
+2025-08-03 18:05:47,850 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-03 18:05:47,914 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-03 18:06:37,552 - INFO - 本次登入檢查完成，程式結束
+2025-08-03 18:06:40,138 - INFO - ==================================================
+2025-08-03 18:06:40,138 - INFO - 啟動自動登入檢查...
+2025-08-03 18:06:40,138 - INFO - 添加隨機延遲 3 秒
+2025-08-03 18:06:43,161 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-03 18:06:43.161724
+2025-08-03 18:06:43,162 - INFO - 找到 1 個需要登入的帳號
+2025-08-03 18:06:43,162 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-03 18:06:43,210 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-03 18:07:23,536 - INFO - 本次登入檢查完成，程式結束
+2025-08-04 20:52:17,943 - INFO - ==================================================
+2025-08-04 20:52:17,943 - INFO - 啟動自動登入檢查...
+2025-08-04 20:52:17,943 - INFO - 添加隨機延遲 1 秒
+2025-08-04 20:52:18,990 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-04 20:52:18.990965
+2025-08-04 20:52:18,994 - INFO - 找到 1 個需要登入的帳號
+2025-08-04 20:52:18,995 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-04 20:52:19,053 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-04 20:53:09,458 - INFO - 本次登入檢查完成，程式結束
+2025-08-04 20:56:24,711 - INFO - ==================================================
+2025-08-04 20:56:24,711 - INFO - 啟動自動登入檢查...
+2025-08-04 20:56:24,711 - INFO - 添加隨機延遲 3 秒
+2025-08-04 20:56:27,743 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-04 20:56:27.743150
+2025-08-04 20:56:27,744 - INFO - 找到 1 個需要登入的帳號
+2025-08-04 20:56:27,744 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-04 20:56:27,804 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-04 21:03:49,552 - INFO - ==================================================
+2025-08-04 21:03:49,552 - INFO - 啟動自動登入檢查...
+2025-08-04 21:03:49,553 - INFO - 添加隨機延遲 1 秒
+2025-08-04 21:03:50,596 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-04 21:03:50.596824
+2025-08-04 21:03:50,598 - INFO - 找到 2 個需要登入的帳號
+2025-08-04 21:03:50,598 - INFO - 準備登入: PTT - py134679
+2025-08-04 21:03:50,598 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-04 21:03:51,759 - INFO - 開始處理 PTT 帳號: py134679
+2025-08-04 21:03:51,795 - INFO - PyPtt v 1.2.18 由 CodingMan 開發
+2025-08-04 21:03:51,795 - INFO - PyPtt 初始化
+2025-08-04 21:03:51,795 - INFO - 設定連線模式 ... WebSocket
+2025-08-04 21:03:51,795 - INFO - 設定語言模組 ... 繁體中文
+2025-08-04 21:03:51,795 - INFO - 設定連線主機 ... 批踢踢
+2025-08-04 21:03:51,795 - INFO - PyPtt 初始化 ... 完成
+2025-08-04 21:03:51,795 - INFO - 目前版本 1.2.18
+2025-08-04 21:03:51,917 - INFO - 登入帳號 py134679
+2025-08-04 21:03:52,258 - INFO - 登入 ... 成功
+2025-08-04 21:03:58,270 - INFO - 登出
+2025-08-04 21:03:58,309 - INFO - 登出 ... 成功
+2025-08-04 21:03:58,312 - INFO - 等待 5 秒處理下一個帳號...
+2025-08-04 21:04:03,374 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-04 21:04:44,504 - INFO - 本次登入檢查完成，程式結束
+2025-08-04 21:05:11,716 - INFO - ==================================================
+2025-08-04 21:05:11,716 - INFO - 啟動自動登入檢查...
+2025-08-04 21:05:11,716 - INFO - 添加隨機延遲 5 秒
+2025-08-04 21:05:16,746 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-04 21:05:16.746611
+2025-08-04 21:05:16,747 - INFO - 找到 2 個需要登入的帳號
+2025-08-04 21:05:16,747 - INFO - 準備登入: PTT - py134679
+2025-08-04 21:05:16,747 - INFO - 準備登入: CMONEY - 0928539044
+2025-08-04 21:05:16,899 - INFO - 開始處理 PTT 帳號: py134679
+2025-08-04 21:05:16,926 - INFO - PyPtt v 1.2.18 由 CodingMan 開發
+2025-08-04 21:05:16,926 - INFO - PyPtt 初始化
+2025-08-04 21:05:16,926 - INFO - 設定連線模式 ... WebSocket
+2025-08-04 21:05:16,926 - INFO - 設定語言模組 ... 繁體中文
+2025-08-04 21:05:16,926 - INFO - 設定連線主機 ... 批踢踢
+2025-08-04 21:05:16,926 - INFO - PyPtt 初始化 ... 完成
+2025-08-04 21:05:16,926 - INFO - 目前版本 1.2.18
+2025-08-04 21:05:16,929 - INFO - 等待 5 秒處理下一個帳號...
+2025-08-04 21:05:21,983 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-04 21:09:54,997 - INFO - ==================================================
+2025-08-04 21:09:54,997 - INFO - 啟動自動登入檢查...
+2025-08-04 21:09:54,997 - INFO - 添加隨機延遲 1 秒
+2025-08-04 21:09:56,043 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-04 21:09:56.043899
+2025-08-04 21:09:56,049 - INFO - 帳號 py134679 還不需要登入 - 下次登入時間: 2025-08-05 23:59:56
+2025-08-04 21:09:56,050 - INFO - 帳號 0928539044 需要登入 - 下次登入時間: 2025-06-26 22:35:00, 當前時間: 2025-08-04 21:09:56.043899
+2025-08-04 21:09:56,050 - INFO - 找到 1 個需要登入的帳號
+2025-08-04 21:09:56,100 - INFO - 開始處理 CMONEY 帳號: 0928539044
+2025-08-04 21:10:33,135 - INFO - 本次登入檢查完成，程式結束
+2025-08-04 21:14:51,310 - INFO - ==================================================
+2025-08-04 21:14:51,310 - INFO - 啟動自動登入檢查...
+2025-08-04 21:14:51,310 - INFO - 添加隨機延遲 1 秒
+2025-08-04 21:14:52,330 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-04 21:14:52.330796
+2025-08-04 21:14:52,333 - INFO - 帳號 py134679 (PTT) 還不需要登入 - 下次登入時間: 2025-08-05 23:59:56
+2025-08-04 21:14:52,334 - INFO - 帳號 0928539044 (CMONEY) 還不需要登入 - 下次登入時間: 2025-08-05 20:00:05
+2025-08-04 21:14:52,334 - INFO - 找到 0 個需要登入的帳號
+2025-08-04 21:14:52,334 - INFO - 本次執行沒有需要登入的帳號，程式結束
+2025-08-04 21:14:56,724 - INFO - ==================================================
+2025-08-04 21:14:56,724 - INFO - 啟動自動登入檢查...
+2025-08-04 21:14:56,725 - INFO - 添加隨機延遲 3 秒
+2025-08-04 21:14:59,746 - INFO - 獲取需要登入的帳號，當前時間: 2025-08-04 21:14:59.746833
+2025-08-04 21:14:59,750 - INFO - 帳號 py134679 (PTT) 還不需要登入 - 下次登入時間: 2025-08-05 23:59:56
+2025-08-04 21:14:59,751 - INFO - 帳號 0928539044 (CMONEY) 還不需要登入 - 下次登入時間: 2025-08-05 20:00:05
+2025-08-04 21:14:59,751 - INFO - 找到 0 個需要登入的帳號
+2025-08-04 21:14:59,751 - INFO - 本次執行沒有需要登入的帳號，程式結束
