@@ -59,7 +59,7 @@ class CMoneyStockScraper(CMoneyBase):
                 time.sleep(3)
                 scroll_attempts = 0
                 max_scrolls = 20  # 最多滾動20次
-
+                
                 while len(stocks) < self.target_count and scroll_attempts < max_scrolls:
                     print(f"第 {scroll_attempts + 1} 次滾動，目前找到 {len(stocks)} 支股票")
                     
