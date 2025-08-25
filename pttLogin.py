@@ -12,8 +12,9 @@ from config import DB_CONFIG  # 導入資料庫設定
 from pttLoginModule import PttLoginBot
 from pttPushModule import PttPushBot
 from pttPostModule import PttPostBot
+from pttSetRandomPushModule import PttSetRandomPushBot
 
-class PttBot(PttLoginBot, PttPushBot, PttPostBot):
+class PttBot(PttLoginBot, PttPushBot, PttPostBot, PttSetRandomPushBot):
     """整合所有 PTT 功能的主類"""
     
     def __init__(self, account, password):
@@ -38,6 +39,19 @@ class PttBot(PttLoginBot, PttPushBot, PttPostBot):
                 print("執行發文任務...")
                 post_count = self.execute_pending_posts()
                 print(f"完成 {post_count} 個發文任務")
+                
+                # 執行隨機推文任務設定（在發文任務之後）
+                print("執行隨機推文任務設定...")
+                random_push_success = self.execute_random_push_setup()
+                if random_push_success:
+                    print("隨機推文任務設定成功")
+                else:
+                    print("隨機推文任務設定完成（可能今日已設定過或無可用文章）")
+                
+                # 執行隨機推文任務（在設定之後）
+                print("執行隨機推文任務...")
+                push_count = self.execute_random_push_posts()
+                print(f"完成 {push_count} 個隨機推文任務")
                 
                 # 登出
                 print(f"所有任務完成，準備登出...")
