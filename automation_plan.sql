@@ -52,7 +52,7 @@ CREATE TABLE `activity_log` (
   PRIMARY KEY (`id`),
   KEY `account_id` (`account_id`),
   CONSTRAINT `activity_log_ibfk_1` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -105,7 +105,7 @@ CREATE TABLE `login_logs` (
   PRIMARY KEY (`id`),
   KEY `account_id` (`account_id`),
   CONSTRAINT `login_logs_ibfk_1` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1171 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1181 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -132,7 +132,24 @@ CREATE TABLE `posts` (
   PRIMARY KEY (`id`),
   KEY `account_id` (`account_id`),
   CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ptt_aid_from_scraper`
+--
+
+DROP TABLE IF EXISTS `ptt_aid_from_scraper`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ptt_aid_from_scraper` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `aid` varchar(45) NOT NULL,
+  `url` varchar(225) NOT NULL,
+  `board` varchar(45) NOT NULL,
+  `created_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -144,11 +161,11 @@ DROP TABLE IF EXISTS `ptt_get_post_by_board`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ptt_get_post_by_board` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `borad` varchar(45) NOT NULL COMMENT '搜尋看板',
+  `board` varchar(45) NOT NULL COMMENT '搜尋看板',
   `limit_replay_count` int NOT NULL DEFAULT '0' COMMENT '推文數需大於此數,才會將找到的文章紀錄',
   `keywords` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `borad_UNIQUE` (`borad`)
+  UNIQUE KEY `borad_UNIQUE` (`board`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -161,11 +178,14 @@ DROP TABLE IF EXISTS `ptt_push_post`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `ptt_push_post` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `board` varchar(225) NOT NULL COMMENT '發文版',
+  `account_id` int NOT NULL COMMENT '推文任務執行帳號',
+  `board` varchar(225) NOT NULL COMMENT '推文版',
   `aid` varchar(50) NOT NULL COMMENT '文章id',
   `content_id` int NOT NULL COMMENT '推文模板id',
+  `status` varchar(45) DEFAULT NULL COMMENT '推文狀態',
+  `push_time` datetime DEFAULT NULL COMMENT '推文時間',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -245,4 +265,4 @@ CREATE TABLE `scheduled_tasks` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-08-04 21:20:35
+-- Dump completed on 2025-08-25 21:47:47
