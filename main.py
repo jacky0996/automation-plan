@@ -116,76 +116,6 @@ def get_accounts_due_for_login():
         logger.error(f"獲取需要登入的帳號時發生錯誤: {e}")
         return []
 
-def _log_login_attempt(status, message=None):
-    """記錄登入嘗試"""
-    try:
-        if not self.conn or not self.account_id:
-            print("無法記錄登入嘗試: 資料庫未連接或帳號ID未知")
-            return
-            
-        cursor = self.conn.cursor()
-        
-        # 如果登入成功，計算下次登入時間
-        if status == "成功":
-            # 計算下次登入時間（隔天的隨機時間）
-            next_login_time = self._calculate_next_login_time()
-            login_message = f"{message}，下次登入時間: {next_login_time}"
-            print(f"下次登入時間: {next_login_time}")
-        else:
-            login_message = message
-        
-        # 記錄登入日誌
-        cursor.execute("""
-            INSERT INTO login_logs (account_id, site_name, login_time, status, message)
-            VALUES (%s, %s, NOW(), %s, %s)
-        """, (self.account_id, 'CMONEY', status, login_message))
-        
-        # 獲取剛插入的日誌ID
-        self.log_id = cursor.lastrowid
-        
-        self.conn.commit()
-        cursor.close()
-
-        print(f"已記錄登入嘗試：{status}")
-        
-    except Exception as e:
-        print(f"記錄登入嘗試時出錯: {e}")
-
-def _calculate_next_login_time():
-    """計算下次登入時間 - 隔天的隨機時間"""
-    import random
-    from datetime import datetime, timedelta
-    
-    try:
-        # 取得明天的日期
-        tomorrow = datetime.now() + timedelta(days=1)
-        
-        # 隨機選擇時間範圍（例如：早上8點到晚上10點）
-        start_hour = 8   # 早上8點
-        end_hour = 22    # 晚上10點
-        
-        # 隨機選擇小時和分鐘
-        random_hour = random.randint(start_hour, end_hour)
-        random_minute = random.randint(0, 59)
-        random_second = random.randint(0, 59)
-        
-        # 組合成完整的下次登入時間
-        next_login_time = tomorrow.replace(
-            hour=random_hour,
-            minute=random_minute,
-            second=random_second,
-            microsecond=0
-        )
-        
-        return next_login_time.strftime("%Y-%m-%d %H:%M:%S")
-        
-    except Exception as e:
-        print(f"計算下次登入時間時發生錯誤: {e}")
-        # 如果出錯，預設為明天中午12點
-        tomorrow_noon = (datetime.now() + timedelta(days=1)).replace(
-            hour=12, minute=0, second=0, microsecond=0
-        )
-        return tomorrow_noon.strftime("%Y-%m-%d %H:%M:%S")
 
 def main():
     """主程序入口"""
@@ -194,7 +124,7 @@ def main():
     
     # 添加程序鎖，避免重複執行
     import os
-    lock_file = '/tmp/login_process_lock'
+    lock_file = 'tmp/login_process_lock'
     try:
         # 嘗試創建鎖文件
         if os.path.exists(lock_file):
