@@ -7,3 +7,4 @@ playwright==1.52.0
 pyee==13.0.0
 beautifulsoup4
 requests
+flake8==7.1.0
