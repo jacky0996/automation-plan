@@ -37,3 +37,50 @@ jobs:
     - name: Syntax check with compileall
       run: |
         python -m compileall .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: 22
+        source: "."
+        target: "/home/${{ secrets.USERNAME }}/automation-plan"
+
+    - name: Executing remote ssh commands using password
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: 22
+        script: |
+          cd /home/${{ secrets.USERNAME }}/automation-plan
+          
+          # 更新系統並安裝必要依賴 (針對 Playwright 與 Python)
+          sudo apt-get update
+          sudo apt-get install -y python3-pip python3-venv libgbm1 libasound2 libnss3 libatk-bridge2.0-0 libgtk-3-0 libx11-xcb1 libxss1 libasound2-t64
+          
+          # 設定虛擬環境
+          python3 -m venv venv
+          source venv/bin/activate
+          
+          # 升級 pip 並安裝依賴
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          
+          # 安裝 Playwright 瀏覽器及其系統依賴
+          playwright install --with-deps chromium
+          
+          # 執行專案 (範例：背景執行 main.py，或您可以改成您的執行指令)
+          # nohup python3 main.py > output.log 2>&1 &
+          echo "Deployment successful!"
