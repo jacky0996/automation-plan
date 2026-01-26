@@ -8,15 +8,16 @@
 
 ## 📋 目錄
 
-- [✨ 功能特色](#-功能特色)
-- [🏗️ 系統架構](#️-系統架構)
-- [📦 安裝指南](#-安裝指南)
-- [⚙️ 配置設定](#️-配置設定)
-- [🚀 使用方法](#-使用方法)
-- [📊 資料庫結構](#-資料庫結構)
-- [📁 專案結構](#-專案結構)
-- [🔧 開發說明](#-開發說明)
-- [⚠️ 注意事項](#️-注意事項)
+- [ ] [✨ 功能特色](#-功能特色)
+- [ ] [🏗️ 系統架構](#️-系統架構)
+- [ ] [📦 安裝指南](#-安裝指南)
+- [ ] [⚙️ 配置設定](#️-配置設定)
+- [ ] [🚀 使用方法](#-使用方法)
+- [ ] [� CI/CD 自動化](#-cicd-自動化)
+- [ ] [�📊 資料庫結構](#-資料庫結構)
+- [ ] [📁 專案結構](#-專案結構)
+- [ ] [🔧 開發說明](#-開發說明)
+- [ ] [⚠️ 注意事項](#️-注意事項)
 
 ## ✨ 功能特色
 
@@ -169,7 +170,7 @@ python pttPushModule.py
 python cmoneySetPostModule.py
 ```
 
-#### 📊 數據收集
+# 📊 數據收集
 ```bash
 # PTT 熱門文章
 python pttHotScraper.py
@@ -177,6 +178,30 @@ python pttHotScraper.py
 # CMONEY 股票爬蟲
 python cmoneyStockScraper.py
 ```
+
+## 🔄 CI/CD 自動化
+
+本專案整合了 GitHub Actions，支援自動化測試 (CI) 與自動化部署 (CD) 至 Azure VM。
+
+### 🚀 持續整合 (CI)
+每當有程式碼 Push 到 `main` 分支或發起 PR 時，系統會自動：
+1. **Lint 檢查**：使用 `flake8` 檢查程式碼規範。
+2. **語法檢查**：使用 `compileall` 確保專案所有檔案皆可通過編譯。
+
+### 📦 持續部署 (CD)
+當程式碼合併至 `main` 時，系統會自動部署至 Azure VM：
+1. **檔案同步**：透過 SCP 將代碼同步至伺服器。
+2. **自動配置環境**：自動安裝 Python 虛擬環境、依賴項 (`requirements.txt`)。
+3. **瀏覽器核心**：自動為 Playwright 安裝 Chromium 以及所有必要的系統依賴 (`libgbm1`, `libnss3` 等)。
+
+### ⚙️ GitHub Secrets 設定
+若要啟用 CD，請在專案的 `Settings > Secrets and variables > Actions` 中設定：
+- `HOST`: Azure VM 的公用 IP。
+- `USERNAME`: 登入帳號。
+- `PASSWORD`: 登入密碼。
+
+### 🖱️ 手動觸發部署
+除了自動觸發外，您也可以在 GitHub 的 **Actions** 頁籤中選擇 "Python CI"，點擊 **"Run workflow"** 手動發起部署。
 
 ## 📊 資料庫結構
 
