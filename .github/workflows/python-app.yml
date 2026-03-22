@@ -57,7 +57,9 @@ jobs:
         script: |
           cd /home/${{ secrets.USERNAME }}/automation-plan
           
-          # 更新程式碼
+          # 強制放棄伺服器上的本地修改（避免以前產生的 __pycache__ 或鎖定檔案導致 git pull 失敗）
+          git fetch --all
+          git reset --hard origin/main
           git pull origin main
           
           # 取消原本繁瑣的環境與依賴部署，直接透過 docker-compose 重建並背景執行
