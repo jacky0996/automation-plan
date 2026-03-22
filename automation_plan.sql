@@ -4,6 +4,10 @@
 -- ------------------------------------------------------
 -- Server version	8.3.0
 
+CREATE DATABASE IF NOT EXISTS `automation_plan`
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_0900_ai_ci;
+USE `automation_plan`;
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -266,3 +270,11 @@ CREATE TABLE `scheduled_tasks` (
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2025-08-25 21:47:47
+
+--
+-- 新增帳號與預設發文任務
+--
+INSERT IGNORE INTO `accounts` (`account`, `password`, `account_type`, `status`) VALUES ('py134679', 'ai134679', 'PTT', 1);
+
+INSERT INTO `posts` (`account_id`, `board`, `title`, `content`, `category`, `platform`)
+SELECT `id`, 'Test', DATE_FORMAT(NOW(), '%Y-%m-%d'), DATE_FORMAT(NOW(), '%Y-%m-%d'), '1', 'ptt' FROM `accounts` WHERE `account` = 'py134679';

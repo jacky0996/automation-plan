@@ -15,4 +15,4 @@ DB_CONFIG = {
 # 其他一般設定
 # DEBUG = os.getenv('DEBUG', 'False').lower() in ('true', '1', 't')
 # LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
-HEADLESS_BROWSER = os.getenv('HEADLESS_BROWSER', 'True').lower() in ('true', '1', 't')
+HEADLESS_BROWSER = os.getenv('HEADLESS_BROWSER', 'Ｆalse').lower() in ('true', '1', 't')
