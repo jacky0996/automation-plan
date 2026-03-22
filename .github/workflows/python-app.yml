@@ -47,16 +47,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: copy file via ssh password
-      uses: appleboy/scp-action@v0.1.7
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: 22
-        source: "."
-        target: "/home/${{ secrets.USERNAME }}/automation-plan"
-
     - name: Executing remote ssh commands using password
       uses: appleboy/ssh-action@v1.0.3
       with:
@@ -66,6 +56,9 @@ jobs:
         port: 22
         script: |
           cd /home/${{ secrets.USERNAME }}/automation-plan
+          
+          # 更新程式碼
+          git pull origin main
           
           # 取消原本繁瑣的環境與依賴部署，直接透過 docker-compose 重建並背景執行
           docker compose down
